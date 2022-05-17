@@ -1,0 +1,287 @@
+/* ================ POLICE(S) ================= */
+
+@font-face {
+    font-family: "Japan";
+    src: url(./font/AnticSlab-Regular.ttf) format("truetype");
+}
+
+/* ================ MAIN ================= */
+body {
+    background-image: url("images/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* reset margin */
+    margin: 0;
+}
+
+article {
+    background-color: #796b5db1;
+    font-family: "Japan";
+    color: rgb(236, 219, 197);
+    margin-top: 5em;
+    margin-bottom: 7em;
+    margin-left: 20vw;
+    margin-right: 20vw;
+    /* padding marge intérieur */
+    padding: 0.05em 2em;
+    border-radius: 0.5em;
+    width: 60%;
+    /* min-width ça sert à définir une largeur minimale au-delà de cette largeur le contenu ne peut plus rétrécir. */
+}
+/* Le unités CSS */
+/* px la taille en pixel */
+/* % de la taille du parent */
+/* em taille d'un caractère */
+/* rem pareil en relatif */
+/* vw view width largeur de la vue */
+/* vh view height hauteur de la vue */
+article:hover {
+    cursor: pointer;
+}
+
+header {
+    color: #c5bebd;
+    background-color: #32403d;
+    padding: 5vh;
+}
+
+img {
+    width: 30vh;
+    height: 30vh;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 1px solid #32403d;
+    transition: 1s ease-in-out;
+}
+
+
+
+article h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+
+footer {
+    background-color: #796b5d;
+    text-align: center;
+    color: rgb(243, 236, 228);
+    padding: 5vh;
+    font-family: "Japan";
+}
+
+span {
+    font-weight: 700;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Japan";
+    font-size: 42px;
+}
+
+aside {
+    background-color: #cec0b2;
+    border-radius: 0.3em;
+    width: 15vw;
+    float: left;
+    position: fixed;
+    padding: 3vh;
+    font-family: "Japan";
+}
+
+nav ul li {
+    list-style-type: none;
+    font-weight: 700;
+}
+
+a[href] {
+    color: #576b65;
+    text-decoration: none;
+    font-size: 2.5vh;
+    text-shadow: 1px 1px 2px white;
+}
+
+h3 {
+    color: #32403d;
+    text-shadow: 1px 1px 2px white;
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+dd {
+    font-weight: 900;
+    color: #32403d;
+    text-shadow: 1px 1px 2px white;
+}
+
+form {
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 2.5rem;
+    align-items: center;
+    margin-top: 10%;
+    padding: 2vh;
+    font-family: "Japan";
+}
+
+input[type="submit"],
+input[type="reset"] {
+    background-color: #796b5db1;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    padding: 0.8vh;
+    border: 0;
+    color: rgb(243, 236, 228);
+    margin-left: 7vh;
+    margin-top: 5vw;
+    font-family: "Japan";
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+button:hover {
+    background-color: #897969;
+}
+
+input[type="file"] {
+    background-color: #897969;
+}
+
+label {
+    color: rgb(243, 236, 228);
+    float: left;
+    display: block;
+}
+
+button {
+    font-family: "Japan";
+    background-color: #796b5db1;
+    text-decoration: none;
+    text-align: center;
+    transition: all 0.2s;
+    padding: 0.8vh;
+    border: 0;
+    color: rgb(243, 236, 228);
+}
+
+/* ================ CLASSES ================= */
+.container__article img {
+    filter: blur(1px);
+    transition: 1s ease-in-out;
+}
+
+.container__image img {
+    transition: 1s ease-in-out;
+}
+
+.container__image img:hover {
+    animation: zoom-in-zoom-out 1s ease;
+}
+
+.container__article {
+    display: flex;
+    column-gap: 50px;
+    align-items: flex-start;
+}
+
+.container__article ul {
+    margin-top: -0.7em;
+}
+
+.container__article ol li {
+    list-style-type: japanese-informal;
+}
+.container__article img:hover {
+    filter: none;
+}
+
+.container__article ol li:before {
+    font-weight: 800;
+}
+
+.container__image {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.title__photo {
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.left__subscription {
+    background-color: #32403d;
+    height: 80vh;
+}
+
+.right__subscription {
+    background-color: #796b5db1;
+    height: 80vh;
+}
+
+.h2__subscription {
+    font-family: "Japan";
+    color: rgb(243, 236, 228);
+    font-size: 40px;
+    margin-top: 40vh;
+    text-align: center;
+}
+
+/* ================ ID ================= */
+
+#connexion__user {
+    background-color: #897969b6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 25%;
+    margin-bottom: 10%;
+    row-gap: 0.2rem;
+}
+
+#form__redaction {
+    background-color: #897969b6;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    margin-left: 25%;
+    margin-bottom: 10%;
+}
+
+#form__subscription label {
+    width: 12vw;
+}
+
+#birthday {
+    margin-left: 1.5vw;
+}
+
+#button__redaction{
+    margin-top: 5rem;
+}
+
+/* ================ ANIMATION ================= */
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
